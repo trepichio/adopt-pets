@@ -9,11 +9,18 @@
            {{ data.value }}
          </router-link>
        </template>
+       <template slot="adopt" slot-scope="data">
+        <b-button size="sm" @click.prevent="adoptPet(`${species}`,`${data.index}`)" class="mr-2">
+          This one!
+        </b-button>
+       </template>
     </b-table>
   </div>
 </template>
 
 <script>
+import { mapActions } from 'vuex'
+
 export default {
   props: {
     species: String,
@@ -22,7 +29,7 @@ export default {
   },
   data () {
     return {
-      fields: ['name', 'breed', 'gender', 'age', 'color', 'weight', 'location', 'notes']
+      fields: ['name', 'breed', 'gender', 'age', 'color', 'weight', 'location', 'notes', 'adopt']
     }
   },
   methods: {
@@ -31,6 +38,13 @@ export default {
     },
     isSingular (n) {
       return n <= 1 ? this.species.slice(0, -1) : this.species;
+    },
+    ...mapActions([
+      'removePet'
+    ]),
+    adoptPet(species, id) {
+      const payload = { species, id }
+      this.removePet(payload)
     }
   }
 }

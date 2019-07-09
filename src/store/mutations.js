@@ -9,5 +9,13 @@ export default {
   appendPet: (state, { species, pet }) => {
     state[species] = [...state[species], pet]
     state.pets = [...state.pets, pet]
+  },
+
+  deletePet: (state, { species, id }) => {
+    state[species] = state[species].filter((pet, index, arr) => index != id )
+  },
+
+  updatePets: state => {
+    state.pets = [...state.cats, ...state.dogs]
   }
 }

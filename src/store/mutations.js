@@ -8,5 +8,6 @@ export default {
    */
   appendPet: (state, { species, pet }) => {
     state[species] = [...state[species], pet]
+    state.pets = [...state.pets, pet]
   }
 }

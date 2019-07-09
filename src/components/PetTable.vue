@@ -15,6 +15,11 @@
         </b-button>
        </template>
     </b-table>
+    <div v-if="amount <= 0">
+     <h2>We're very happy to say all our pets have a home now!</h2>
+     <h1>🐕<strong>BUT, PLEASE</strong>🐈</h1>
+     <h5>come back later because for sure there will be one specially happy to be adopted by YOU!</h5>
+    </div>
   </div>
 </template>
 

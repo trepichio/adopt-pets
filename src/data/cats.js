@@ -1,6 +1,7 @@
 export default [
   {
-    name: 'Fish',
+    species: 'cats',
+		name: 'Fish',
     breed: 'tuxedo',
     gender: 'male',
     age: 20,
@@ -10,7 +11,8 @@ export default [
     notes: 'Sweet kitty. He loves getting his belly rubbed.'
   },
   {
-    name: 'Henry',
+    species: 'cats',
+		name: 'Henry',
     breed: 'tabby',
     gender: 'male',
     age: 20,
@@ -20,7 +22,8 @@ export default [
     notes: 'Super friendly'
   },
   {
-    name: 'Roger',
+    species: 'cats',
+		name: 'Roger',
     breed: 'tabby',
     gender: 'male',
     age: 20,
@@ -30,7 +33,8 @@ export default [
     notes: 'Super friendly'
   },
   {
-    name: 'Kitkat',
+    species: 'cats',
+		name: 'Kitkat',
     breed: 'bombay',
     gender: 'female',
     age: .9,

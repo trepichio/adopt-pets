@@ -1,6 +1,7 @@
 export default [
   {
-    name: 'Sheeba',
+    species: 'dogs',
+		name: 'Sheeba',
     breed: 'collie',
     gender: 'female',
     age: 7,
@@ -10,7 +11,8 @@ export default [
     notes: 'Pure breed. Trained for competitions.'
   },
   {
-    name: 'Hillary',
+    species: 'dogs',
+		name: 'Hillary',
     breed: 'mut',
     gender: 'female',
     age: 17,
@@ -20,7 +22,8 @@ export default [
     notes: 'Super friendly'
   },
   {
-    name: 'Zeus',
+    species: 'dogs',
+		name: 'Zeus',
     breed: 'afghan hound',
     gender: 'male',
     age: 9,
@@ -30,7 +33,8 @@ export default [
     notes: 'Super friendly'
   },
   {
-    name: 'Katie',
+    species: 'dogs',
+		name: 'Katie',
     breed: 'golden retriever',
     gender: 'female',
     age: 2,

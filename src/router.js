@@ -18,17 +18,17 @@ export default new Router({
     },
     {
       path: '/cats',
-      name: 'Cats',
+      name: 'cats',
       component: Cats
     },
     {
       path: '/dogs',
-      name: 'Dogs',
+      name: 'dogs',
       component: Dogs
     },
     {
-      path: '/pet',
-      name: 'Pet',
+      path: '/pets/:id',
+      name: 'pet',
       component: Pet
     },
   ]

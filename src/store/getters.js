@@ -3,9 +3,9 @@ export default {
     return getters.getAllCats + getters.getAllDogs
   },
   getAllCats: (state) => {
-    return state.pets.filter(pet => pet.species === 'cats').length
+    return state['cats'].length
   },
   getAllDogs: (state) => {
-    return state.pets.filter(pet => pet.species === 'dogs').length
+    return state['dogs'].length
   }
 }

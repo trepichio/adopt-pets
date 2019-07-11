@@ -5,6 +5,6 @@ export default {
   },
   removePet: ({ commit }, payload) => {
     commit('deletePet', payload)
-    commit('updatePets')
+    // commit('updatePets')
   }
 }

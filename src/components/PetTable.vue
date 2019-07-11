@@ -15,10 +15,10 @@
         </b-button>
        </template>
     </b-table>
-    <div v-if="amount <= 0">
-     <h2>We're very happy to say all our pets have a home now!</h2>
+    <div id="no-pets-message" v-if="amount <= 0">
+     <h2>We're very happy to say all our {{ species }} have a home now!</h2>
      <h1>🐕<strong>BUT, PLEASE</strong>🐈</h1>
-     <h5>come back later because for sure there will be one specially happy to be adopted by YOU!</h5>
+     <h5>check our other pets or come back later because for sure there will be one specially happy to be adopted by YOU!</h5>
     </div>
   </div>
 </template>
@@ -54,3 +54,10 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+  #no-pets-message {
+      width: 70%;
+      margin: 0 auto;
+  }
+</style>
